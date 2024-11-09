@@ -2,7 +2,7 @@ public class Calendario {
     
     public static int siguienteYear (int year)
     {
-        return year++;
+        return ++year;
     }
 
     public static int siguienteMes(int mes){
