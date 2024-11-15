@@ -25,6 +25,27 @@ public class JuegosAzar {
             return seisNumero;
         }
 
+    //juego de melate repetido un millon de veces
+    public static int [] melateUnMillon(){
+        int seisNumero[]=new int [7];
+        int numerosMelate[]=new int [57];
+        int contador=1;
+        int pelotaMelate=0;
+        
+        while (contador <=1000000){
+                       
+            seisNumero=melate();
+            for (int i=1; i<=6; i++){
+                numerosMelate[seisNumero[i]]++;
+            
+            }
+            contador++;
+        }
+            return numerosMelate;
+        }
+
+    //funcion que verifica cuales son los 6 numeros mas repetidos en un arreglo
+    
         
     
 

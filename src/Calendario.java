@@ -20,8 +20,8 @@ public class Calendario {
         int diasMesNoBiciesto []= {0,31,28,31,30,31,30,31,31,30,31,30,31};
         int diasMesBiciesto []= {0,31,29,31,30,31,30,31,31,30,31,30,31};
         int fecha [] = new int [3];
-        int yearTemporal=0;
-        int mesTemporal=0;
+        int yearTemporal=year;
+        int mesTemporal=mes;
 
         if (esBiciesto(year)){
             //revisar si el día es el ultimo del mes
