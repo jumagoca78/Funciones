@@ -127,7 +127,13 @@ public class TestCalendario {
         assertTrue(resultado);
     }
 
-    
+    //probar exactamente en los limites de los meses
+    @Test
+    public void testSiguienteDiaMesEnero() {
+        int[] resultado = Calendario.siguienteDia(1, 1, 2019);
+        int[] esperado = {2, 1, 2019};
+        assertArrayEquals(esperado, resultado);
+    }
 
 
     

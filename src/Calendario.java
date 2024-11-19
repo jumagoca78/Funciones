@@ -6,6 +6,10 @@ public class Calendario {
     }
 
     public static int siguienteMes(int mes){
+        if ((mes>12) || (mes<1)){
+            throw new IllegalArgumentException("El mes no es valido");
+        }
+
         if (mes==12){
             mes=1;
            
@@ -19,7 +23,7 @@ public class Calendario {
     public static int [] siguienteDia (int dia, int mes, int year){
         int diasMesNoBiciesto []= {0,31,28,31,30,31,30,31,31,30,31,30,31};
         int diasMesBiciesto []= {0,31,29,31,30,31,30,31,31,30,31,30,31};
-        int fecha [] = new int [3];
+        int fecha [] = new int [3];//primer valor es el dia, el segundo el mes y el tercero el año
         int yearTemporal=year;
         int mesTemporal=mes;
 
